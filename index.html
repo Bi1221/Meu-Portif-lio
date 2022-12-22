@@ -27,10 +27,10 @@
       border-radius: 50%;
     }
     .corPrimaria{
-      background-color: lightslategrey;
+      background-color: rgb(194, 199, 204);
     }
     .corSecundaria{
-      background-color: darkslategrey;
+      background-color: rgb(175, 180, 180);
     }
     p{
       font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -60,11 +60,25 @@
 
 }
 
+.jumbotron{
+  margin-bottom: 0px;
+
+}
+
+.textfooter{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+html {
+scroll-behavior: smooth;
+
+}
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="corSecundaria navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="#">Bianca Bartole Mendes</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,39 +92,40 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Projetos</a>
+          <a class="nav-link" href="#projetos">Projetos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre mim</a>
+          <a class="nav-link" href="#sobre-mim">Sobre mim</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Depoimentos</a>
+          <a class="nav-link" href="#depoimentos">Depoimentos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
+          <a class="nav-link" href="#contato">Contato</a>
         </li>
 
       </ul>
 
     </div>
   </nav>
-  <section class="jumbotron text-center">
+  <section class="jumbotron text-center corPrimaria">
     <div class="container">
-      <h2 class="jumbotrom-heading text-center">Projetos</h2>
+    
       <img class="foto-perfil" src="https://thumbs2.imgbox.com/ce/0a/PxngYz6D_t.jpg" alt="">
       <h1 class="jumbotron-heading">Bianca Bartole Mendes</h1>
       <p class="lead text-muted">Tecnologia da informação e áreas afins.</p>
       <p>
-        <a href="#" class="btn btn-dark my-2">Contato</a>
+        <a href="#contato" class="btn btn-dark my-2">Contato</a>
       </p>
       <a href="https://www.linkedin.com/in/bianca-bartole-3a1b14220/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Bi1221"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/Bi1221"><i 
+        class="fab fa-github"></i></a>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-light" id="projetos">
     <div class="container">
-
+<h2 class="jumbotron-heading text-center">Projetos</h2>
       <div class="row">
         <div class="col-md-6">
           <div class="card mb-4 box-shadow">
@@ -201,7 +216,7 @@
   </div>
 
   <!--Sobre Mim-->
-  <section class="jumbotron text-center">
+  <section class="jumbotron text-center corPrimaria" id="sobre-mim">
 <div class="conteiner">
   <h2 class="jumbotron-heading">Sobre Mim </h2>
   <p class="lead">Sou estudante em Analise e desenvolvimento de sistemas, sou apaixonada por Tecnologia e de aprender novas linguagens, busco hoje um estágio para me desenvolver e aprimorar meus conhecimentos.</p>
@@ -209,9 +224,9 @@
   </section>
 <!--Depoimentos-->
 
-<section class="jumbotron text-center">
+<section class="jumbotron text-center " id="depoimentos">
   <div class="conteiner">
-<h2 class="jumbotron-heading text-center">
+<h2 class="jumbotron-heading text-center ">
   Depoimentos
 
 </h2>
@@ -224,18 +239,21 @@
 </section>
 <!--Contato-->
 
-<section>
+<section class="corPrimaria" id="contato">
   <div>
-    <div class="container-fluid">
-      <h3 class="text-center">Disponivel para oportunidades</h3>
-      <h4 class="class text-center">biancabartole23@gmail.com</h4>
+    <div class="container-fluid ">
+      <h5 style="padding-top: 50px" class="text-center">Disponivel para oportunidades</h5>
+      <a href="Mailto:biancabrtole23@gmail.com"><h6 style="padding-bottom: 50px;
+         margin-bottom: 0px; "class= "text-center">biancabartole23@gmail.com</h6>
+      </a>
 
     </div>
   </div>
 </section>
 
 <!--footer-->
-  <footer class="text-center">
+
+  <footer class="text-center corSecundaria textfooter">
     <p> Obrigada 2022 DEV estudante</p>
 
   </footer>
